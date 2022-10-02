@@ -1,0 +1,1 @@
+ps -ef  | grep "main.py" | grep -v "grep" | kill -9 `awk '{print $2}'`

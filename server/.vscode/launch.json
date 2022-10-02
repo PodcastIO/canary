@@ -1,0 +1,55 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "server",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/podcast/main.py",
+      "args": ["server"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src${env:PYTHONPATH}"
+      }
+    },
+    {
+      "name": "scheduler",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/podcast/main.py",
+      "args": ["scheduler"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src${env:PYTHONPATH}"
+      }
+    },
+    {
+      "name": "other",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/podcast/main.py",
+      "args": ["rq", "--name=other"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src${env:PYTHONPATH}"
+      }
+    },
+    {
+      "name": "zh",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/podcast/main.py",
+      "args": ["rq", "--name=zh"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src${env:PYTHONPATH}"
+      }
+    },
+    {
+      "name": "en",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/podcast/main.py",
+      "args": ["rq", "--name=en"],
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src${env:PYTHONPATH}"
+      }
+    }
+  ]
+}

@@ -95,8 +95,8 @@ Please view the [Document](./server/README.md) for backend development instructi
 ## Roadmap
 
 - [ ] re-generate single podcast or episode.
-- [ ] edit episode chapter text.
-- [ ] set regex rule to filter or modify chapter text.
+- [ ] support to edit episode chapter text.
+- [ ] manage regex rule to filter or modify chapter text.
 - [ ] manage voice models.
 - [ ] clone voice as some voice sample.
 

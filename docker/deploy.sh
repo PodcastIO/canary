@@ -6,6 +6,7 @@ STAT_JOBS=("en" 0 "zh" 0 "ja" 0 "de" 0 "nl" 0 "fr" 0 "es" 0)
 CUR_DIR=$(cd `dirname $0`; pwd)
 
 UNIX_TIME=$(date +%s)
+cp ${CUR_DIR}/.env /tmp/
 DOCKER_COMPOSE_FILE="/tmp/docker-compose_${UNIX_TIME}.yml"
 
 

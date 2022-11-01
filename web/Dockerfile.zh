@@ -3,7 +3,7 @@ FROM node:14-buster as builder
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-RUN npm install -g tyarn
+RUN npm install -g tyarn --registry https://registry.npm.taobao.org
 
 COPY ./package.json ./
 
